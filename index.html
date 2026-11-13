@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBay - Página de Inicio</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="top-bar">
+      <div class="user-info">
+        <span>¡Hola! <a href="#">Inicia sesión</a> o <a href="#">regístrate</a></span>
+      </div>
+      <div class="header-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="header-icon"></a>
+        <div class="cart-box" id="cart-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrito de compras" class="header-icon">
+          <span class="badge" id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <a href="index.html" class="logo-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo" class="ebay-logo">
+      </a>
+
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar" class="input-icon left-icon">
+          <input type="text" id="search-input" placeholder="BUSCAR ARTICULOS">
+          <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" alt="Buscar por foto" class="input-icon right-icon">
+        </div>
+        <button class="btn-search" id="btn-search">BUSCAR</button>
+        <a href="#" class="advanced-link">Avanzada</a>
+      </div>
+    </div>
+
+    <nav class="sub-nav">
+      <a href="index.html">Guardado</a>
+      <a href="static/pages/partes.html">Tecnología</a>
+      <a href="static/pages/partes.html">Vehículos</a>
+      <a href="static/pages/moda.html">Moda</a>
+      <a href="#">Coleccionables y Arte</a>
+      <a href="#">Deportes</a>
+      <a href="#">Salud y belleza</a>
+      <a href="#">Equipo Industrial</a>
+      <a href="#">Hogar y jardín</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Vender</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="hero-banner">
+      <div class="hero-content">
+        <h1>Accesorios y precios épicos.</h1>
+        <p>Explora millones de mejoras para tu vehículo.</p>
+        <a href="static/pages/partes.html" class="btn-white">Compra ahora</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=400" alt="Vehículo" style="width: 250px; border-radius: 8px;">
+    </div>
+
+    <div class="info-banner">
+      <div>
+        <h2>¡Qué fácil es comprar!</h2>
+        <p>Disfruta de confiabilidad, entrega segura y fácil devolución.</p>
+      </div>
+      <button class="btn-black">Empieza ya</button>
+    </div>
+
+    <div class="section-block">
+      <h3>Artículos vistos recientemente</h3>
+      <div class="recent-items-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" class="product-img" alt="iPhone 15">
+          <div class="product-title">Apple iPhone 15 A2846 128GB 256GB 512GB Unlocked</div>
+          <div class="product-price">CLP $433 625.00</div>
+          <button class="btn-add-cart" onclick="addToCart()">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h3>Compra por categorías</h3>
+      <div class="circle-categories-grid">
+        <a href="static/pages/partes.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300" alt="Nueva electronica"></div>
+          <span>Nueva electrónica</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300" alt="Coleccionables"></div>
+          <span>Coleccionables</span>
+        </a>
+        <a href="static/pages/partes.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=300" alt="Partes y accesorios"></div>
+          <span>Partes y accesorios</span>
+        </a>
+        <a href="static/pages/moda.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=300" alt="Moda"></div>
+          <span>Moda</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300" alt="Salud y Belleza"></div>
+          <span>Salud y Belleza</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=300" alt="Hogar y jardín"></div>
+          <span>Hogar y jardín</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Reacondicionados"></div>
+          <span>Reacondicionados</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h3>Hallazgos raros</h3>
+      <div class="circle-categories-grid">
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=300" alt="Memorabilia Deportiva"></div>
+          <span>Memorabilia Deportiva</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=300" alt="Tarjetas Coleccionable"></div>
+          <span>Tarjetas Coleccionable</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300" alt="Juego de carta"></div>
+          <span>Juego de carta</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?w=300" alt="Funko"></div>
+          <span>Funko</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=300" alt="Comics"></div>
+          <span>Comics</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1558679908-541bcf1249ff?w=300" alt="Figuras de accion"></div>
+          <span>Figuras de accion</span>
+        </a>
+        <a href="#" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=300" alt="Antigüedades"></div>
+          <span>Antigüedades</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <h3>Mejora tu vehículo</h3>
+      <div class="circle-categories-grid">
+        <a href="static/pages/piezas_accesorios.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=300" alt="Partes para autos"></div>
+          <span>Partes para autos</span>
+        </a>
+        <a href="static/pages/piezas_accesorios.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=300" alt="Partes exteriores para autos"></div>
+          <span>Partes exteriores para autos</span>
+        </a>
+        <a href="static/pages/piezas_accesorios.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?w=300" alt="Llantas para autos"></div>
+          <span>Llantas para autos</span>
+        </a>
+        <a href="static/pages/piezas_accesorios.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=300" alt="Partes interiores para autos"></div>
+          <span>Partes interiores para autos</span>
+        </a>
+        <a href="static/pages/partes.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=300" alt="Partes para motocicletas"></div>
+          <span>Partes para motocicletas</span>
+        </a>
+        <a href="static/pages/partes.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=300" alt="Vestimenta para autos y motos"></div>
+          <span>Vestimenta para autos y motos</span>
+        </a>
+        <a href="static/pages/piezas_accesorios.html" class="circle-item">
+          <div class="circle-img-box"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=300" alt="Partes para todoterrenos"></div>
+          <span>Partes para todoterrenos</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
